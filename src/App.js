@@ -1,23 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo1.svg'
+import React from 'react'
+document.body.style = 'background: #554348;';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div class="navbar">
+      <div class="logo">
+      <img src={logo} alt="" width="150px" height="150px"/>
+      </div>
+
+      <div class="nav1">
+        <div>
+          HOME
+        </div>
+
+        <div>
+          ABOUT
+        </div>
+
+        <div>
+          CONTACT
+        </div>
+
+      </div>
+
+      </div>
+    <div class="namebox">
+
+      <div class="name">
+        TEA ABUSELIDZE
+      </div>
+
+      <div class="description">
+        Software Engineer and Front End Developer
+      </div>
+
+    </div>
+    
     </div>
   );
 }
