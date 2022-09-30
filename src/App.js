@@ -1,46 +1,37 @@
 import './App.css';
-import logo from './logo1.svg'
 import React from 'react'
-document.body.style = 'background: #554348;';
+import Navbar from './components/Navbar';
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Work from './pages/Work'
+import {Route, Routes} from "react-router-dom"
+
+var colors = ["#554348", "#514355", "#474355", "#434a55"];
+var currentIndex = 0;
+
+setInterval(function() {
+	document.body.style.cssText = "background-color: " + colors[currentIndex];
+	currentIndex++;
+	if (currentIndex === undefined || currentIndex >= colors.length) {
+		currentIndex = 0;
+	}
+}, 1000);
 
 function App() {
-  return (
+  return(
+<>
+    <Navbar/>
     <div>
-      <div class="navbar">
-      <div class="logo">
-      <img src={logo} alt="" width="150px" height="150px"/>
-      </div>
-
-      <div class="nav1">
-        <div>
-          HOME
-        </div>
-
-        <div>
-          ABOUT
-        </div>
-
-        <div>
-          CONTACT
-        </div>
-
-      </div>
-
-      </div>
-    <div class="namebox">
-
-      <div class="name">
-        TEA ABUSELIDZE
-      </div>
-
-      <div class="description">
-        Software Engineer and Front End Developer
-      </div>
-
+      <Routes> 
+        <Route path="/work" element={<Work/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
     </div>
-    
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;

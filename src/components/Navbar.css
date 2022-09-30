@@ -1,0 +1,66 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+    font-weight: 200;
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    color: black;
+  }
+  
+  /*.nav li:hover {
+    background-color: #777;
+  }*/
+
+  .logo{
+    margin-right: 58%;
+  }
+
+  .zoom {
+    overflow: hidden; 
+  }
+  
+  .zoom img {
+    transition: transform .5s ease;
+  }
+  
+  .zoom:hover img {
+    transform: scale(1.1);
+  }
