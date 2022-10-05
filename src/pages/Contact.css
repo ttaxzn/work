@@ -1,0 +1,86 @@
+.hello{
+    font-size: 130px;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond,
+    "Times New Roman", serif;
+    text-decoration: none;
+    color: #FFFFFA
+}
+
+.text2{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    color: #FFFFFA
+}
+
+a:-webkit-any-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFA
+}
+
+a:visited { 
+text-decoration: none;
+color: #FFFFFA
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper2{
+    margin-top: 2rem;
+    margin-right: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: baseline;
+
+}
+
+.a div {
+    transition: transform 0.5s ease;
+  }
+  
+.a:hover div {
+    transform: scale(1.05);
+  }
+
+
+.hover-underline-animation1 {
+    display: inline-block;
+    position: relative;
+    color: #FFFFFA;
+  }
+  
+.hover-underline-animation1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFA;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.hover-underline-animation1:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .slash{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .web1{
+    margin-right: 5px;
+  }

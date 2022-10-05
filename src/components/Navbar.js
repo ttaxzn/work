@@ -25,14 +25,14 @@ export default function Navbar(){
 
     <ul>
         <li>
-        <CustomLink to="/work">Work</CustomLink>
+        <CustomLink to="/work">WORK</CustomLink>
         </li>
         <li>
-        <CustomLink to="/about">About
+        <CustomLink to="/about">ABOUT
             </CustomLink>        
         </li>
         <li>
-        <CustomLink to="/contact">Contact
+        <CustomLink to="/contact">CONTACT
             </CustomLink>
         </li>
     </ul>
