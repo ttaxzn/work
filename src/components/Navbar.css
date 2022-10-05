@@ -42,7 +42,7 @@
   }
   
   .nav li.active {
-    color: black;
+    color: rgb(28, 27, 27);
   }
   
   /*.nav li:hover {

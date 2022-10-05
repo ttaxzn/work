@@ -1,102 +1,128 @@
-.name{
-    align-content: center;
-    color: #FFFFFA;
-    font-size: 60px;
-    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
-    font-weight: 200;
-  }
-  
-  .description{
-    align-content: center;
-    color: #FFFFFA;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 300;
-  
-  }
 
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 12rem;
-  }
+.name {
+  align-content: center;
+  color: #fffffa;
+  font-size: 60px;
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond,
+    "Times New Roman", serif;
+  font-weight: 200;
 
-  .container1{
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #FFFFFA;
-    gap: 3rem;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 300;
-  }
+}
 
-  .projects{
-    overflow: hidden; 
-    padding-right: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-    align-content: center;
-  }
+.description {
+  align-content: center;
+  color: #fffffa;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+}
 
-  .learn{
-    display: flex;
-    overflow: hidden; 
-    padding-right: 20px;
-    flex-direction: row;
-    gap: .5rem;
-    align-content: center;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 10rem;
+}
 
-  .projects div {
-    transition: transform .5s ease;
-  }
-  
-  .projects:hover div {
-    transform: scale(1.05);
-  }
+.container1 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fffffa;
+  gap: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+}
 
-  .learn div {
-    transition: transform .5s ease;
-  }
-  
-  .learn:hover div {
-    transform: scale(1.05);
-  }
+.projects {
+  overflow: hidden;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-content: center;
+}
 
-  .description {
-    height: 10vh;
-    /*This part is important for centering*/
-    display: flex;
-    place-items: center;
-    justify-content: center;
+.learn {
+  display: flex;
+  overflow: hidden;
+  padding-right: 20px;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-content: center;
+}
+
+.projects div {
+  transition: transform 0.5s ease;
+}
+
+.projects:hover div {
+  transform: scale(1.05);
+}
+
+.learn div {
+  transition: transform 0.5s ease;
+}
+
+.learn:hover div {
+  transform: scale(1.05);
+}
+
+.description {
+  height: 10vh;
+  /*This part is important for centering*/
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  display: flex;
+  align-content: center;
+  width: 41ch;
+  animation: typing 5s steps(41), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: 300px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  .typing-demo {
-    display: flex;
-    align-content: center;
-    width: 41ch;
-    animation: typing 5s steps(41), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 18px;
-    font-weight: 300px;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #FFFFFA;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFA;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
